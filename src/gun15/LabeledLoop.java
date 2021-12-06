@@ -3,7 +3,6 @@ package gun15;
 public class LabeledLoop {
     public static void main(String[] args) {
 
-
         /*
         break sadece icinde bulundugu döngüyü kirar(continue icinde durum aynidir)
         disaridaki döngüyü kirmak icin disaridaki döngüye isim verilir.

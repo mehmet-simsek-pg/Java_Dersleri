@@ -16,14 +16,14 @@ public class _05_Array2D {
         int toplam = 0; // toplam degiskeni disarida oldugu icin if else icerisindeki islemlerin toplam sonucunu alir
         String fiyat = "";
 
-        for (int i = 0; i < fiyatlar.length; i++) {
-            for (int j = 0; j < fiyatlar[i].length; j++) {
+        for (int satir = 0; satir < fiyatlar.length; satir++) {
+            for (int sütun = 0; sütun < fiyatlar[satir].length; sütun++) {
 
-                if (fiyatlar[i][j].contains("$")){
-                    fiyat=fiyatlar[i][j].replaceAll("\\$","");
+                if (fiyatlar[satir][sütun].contains("$")){
+                    fiyat=fiyatlar[satir][sütun].replaceAll("\\$","");
                     toplam+=Integer.parseInt(fiyat)*3;
                 }else {
-                    fiyat=fiyatlar[i][j].replaceAll("€","");
+                    fiyat=fiyatlar[satir][sütun].replaceAll("€","");
                     toplam+=Integer.parseInt(fiyat)*5;
                 }
             }

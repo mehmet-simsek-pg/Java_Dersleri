@@ -53,12 +53,5 @@ public class OrnekSorular {
          < 40 için F yazdırınız.
          */
 
-
-
-
-
-
-
-
     }
 }

@@ -1,8 +1,6 @@
 package gun24;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.TreeSet;
+import java.util.*;
 
 public class _07_HashSet {
     public static void main(String[] args) {
@@ -20,5 +18,6 @@ public class _07_HashSet {
 
         // Integer icin kucukten buyuge dogru siralar
         TreeSet<Integer> integerTreeSet = new TreeSet<>();
+
     }
 }

@@ -10,23 +10,9 @@ public class Example2 {
         //  ciktisi bu sekilde olacaktir ->
         //  3a3b3f3g3t3d bu soruyu HashSet kullanarak cözmeye calisin.
 
-        duzenli("aaabbbfffgggctttdddd");
+        duzenli("aaabbbfffgggctttddddc");
 
-    }
 
-    public static int count(String str) {
-        int miktar = 0;
-        for (int i = 0; i < str.length(); i++) {
-            miktar = 0;
-            for (int j = 0; j < str.length(); j++) {
-                if (str.charAt(i) == str.charAt(j)) {
-                    miktar++;
-                } else
-                    return miktar;
-
-            }
-        }
-        return miktar;
     }
 
     public static void duzenli(String str) {
@@ -36,8 +22,20 @@ public class Example2 {
 
         String yeni = "";
         for (String harf : harfler) {
-            yeni += count(str) + harf;
+            yeni += count(str,harf) + harf;
         }
         System.out.println(yeni);
     }
+    public static int count(String str,String harf) {
+        int miktar = 0;
+        for (int i = 0; i < str.length(); i++) {
+            String s = String.valueOf(str.charAt(i));
+                if (harf.equals(s))
+                    miktar++;
+        }
+        return miktar;
+    }
+
+
+
 }

@@ -18,6 +18,7 @@ public class _04_Map {
         // Mainde sadece Seçenekler ve metodların çağrılması olsun.
 
         Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         Map<String,Map<String,String>> users = new HashMap<>();
 
@@ -28,13 +29,42 @@ public class _04_Map {
             islem = scanner.nextInt();
             switch (islem){
                 case 1: ekleme(users); break;
-                case 2: //listeleme(); break;
-                case 3: //arama(); break;
-                case 4: //duzeltme(); break;
+                case 2: listeleme(users); break;
+                case 3:
+                    System.out.println("username girin");
+                    String username = sc.nextLine();
+                    arama(users,username); break;
+                case 4:
+                    System.out.println("username girin");
+                    username = sc.nextLine();
+                    duzeltme(users,username); break;
             }
 
         }while (islem<5);
 
+    }
+    public static void duzeltme(Map<String,Map<String,String>> users, String username){
+        Scanner girdi = new Scanner(System.in);
+        Map<String,String> map = new HashMap<>();
+
+        System.out.println("yeni pass girin");
+        String pass = girdi.nextLine();
+
+        System.out.println("yeni rol");
+        String rol = girdi.nextLine();
+
+        map.put(pass,rol);
+
+        users.put(username,map);
+
+    }
+    public static void arama(Map<String,Map<String,String>> users, String username){
+        System.out.println(users.get(username));
+    }
+    public static void listeleme(Map<String,Map<String,String>> users){
+        for (Map.Entry<String,Map<String,String>> mapEntry:users.entrySet()){
+            System.out.println(mapEntry.getKey()+" "+mapEntry.getValue());
+        }
     }
 
     public static void ekleme(Map<String,Map<String,String>> users) {

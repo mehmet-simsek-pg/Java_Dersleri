@@ -1,8 +1,6 @@
-package gun25;
+package gun26;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Scanner;
 
 public class Example1 {
     public static void main(String[] args) {

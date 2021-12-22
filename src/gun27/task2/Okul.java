@@ -1,4 +1,4 @@
-package gun26.task2;
+package gun27.task2;
 
 import java.util.Scanner;
 

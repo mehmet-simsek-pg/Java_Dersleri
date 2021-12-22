@@ -1,4 +1,4 @@
-package gun26.task1;
+package gun27.task1;
 
 public class Otomobil {
 

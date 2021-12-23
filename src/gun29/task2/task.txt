@@ -1,0 +1,29 @@
+Bir Insan class"i tanimlayin
+
+class Insan
+    static count->int;
+
+    adi ->String
+    yasi -> int
+    akrabalari -> ArrayList<String>
+
+
+    methodlari
+    veriAta(String adi, int yasi){
+        Insan.count++;
+        this.adi = adi;
+        this.yasi = yasi;
+    }
+
+    akrabaAta(String...adi){
+            for loop ile arrayList icine atanacak
+        }
+
+    adiniSoyle()
+    akrabalariniSoyle()
+
+
+ Main class
+    static insanSayisi();
+
+

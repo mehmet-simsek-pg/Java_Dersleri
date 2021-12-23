@@ -1,0 +1,15 @@
+Insan classi olusturun
+
+    String adi;
+    baba
+    anne
+
+    methodlar
+
+    adAta(String)
+    babaAta()
+    anneAta()
+
+    adinNe()
+    babninAdiNe()
+    anneninAdiNe()

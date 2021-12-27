@@ -14,9 +14,8 @@ public class Main {
         Insan dede = new Insan();
         dede.veriAta("Dede", 80);
 
-        i1.babaAta(i2);
+        //i1.babaAta(i2);
         i1.anneAta(i3);
-
         i2.babaAta(dede);
 
         i1.senKimsin();

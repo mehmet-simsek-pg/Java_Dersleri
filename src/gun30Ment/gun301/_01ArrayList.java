@@ -1,4 +1,4 @@
-package gun30Ment;
+package gun30Ment.gun301;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

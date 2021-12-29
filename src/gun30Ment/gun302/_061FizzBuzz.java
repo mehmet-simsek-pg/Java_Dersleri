@@ -9,9 +9,9 @@ public class _061FizzBuzz {
     public static void main(String[] args) {
     /*
         1 ile 100 arasindaki sayilardan
-        3 ile blünenen yerine FIZZ
-        5 ile blünenen yerine BAZZ
-        15  ile blünenen yerine FIZZBAZZ yazdirin
+        3 ile bölünenen yerine FIZZ
+        5 ile bölünenen yerine BAZZ
+        15  ile bölünenen yerine FIZZBAZZ yazdirin
      */
 
         String format = "%-10s";

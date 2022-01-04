@@ -1,5 +1,6 @@
 package gun31.paket1;
 
+
 public class Kitap {
     String adi;
     int basimYili;

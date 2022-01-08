@@ -1,0 +1,59 @@
+1.  Marka ve Mevsim Enum olsun
+    Ayakkabi class'i tanimlayin
+        mevsim  // Enum
+        marka   // Enum
+        numara
+
+    Insan class'i tanimlayin
+        adi
+        ayakkabiNo
+        Ayakkabi    // giyecegi ayakkabi
+
+    Main class'i tanimlayin
+        static mevsim tanimlayin ve deger atayin // enum
+        3 cesit ayakkabi tanimlayin (yazlik, kislik, baharlik)
+        insan'a verilen ayakkabiyi giy komutu verin
+            önceden ayakkabisi giymis ise "Zaten ayakkabim var"
+            giymemis ise
+                static olan mevsim e göre giydirmeye calistiginiz ayakkabi icin
+                    ya "Bu ayakkabi bu mevsimde giyilmez" ya da "markali ayakkabiyi giydim" yazsin
+                Ayakkabi numarasi uygun degil ise "Numarasi kücük/büyük giyemem" yazsin
+
+        ayakkabiCikar();
+            ayakkabisi yoksa "Ayakkabim yok ki, ne cikarayim"
+        insana gez komutu verin
+            ayakkabisi versa "tamam", yoksa "ayakkabim yok ki" desin
+        insana geriGel komutu verin
+            "tamam eve döndüm"
+            gezmeye cikmamissa durumunu dikkate alin
+
+
+
+2.
+
+    IsYeri nesnesi olusturun
+        adi
+        HashSet<Isci> calisanlar
+
+    Isci olusturun
+        adi
+        Isci grupArkadasi    // her iscinin bir calisma arkadasi olmali
+
+    Main
+        2 adet isyeri ve 4 adet isci olusturun
+        iscilerin calisma arkadasini atayin,
+        bir isciye is arkadasi atayinda diger iscinin de is arkadasi olarak da bu isci otomatik atanmali
+        iscileri isyerlerine gönderin
+        isyerlerinde kimlerin calistigini ekrana yazdiran methodu da yazmayi unutmayin
+
+
+3.
+    Aile soyagaci
+    Insan class
+        adi
+        Insan anne
+        Insan baba
+        Insan es
+        cocuklar -> ArrayList<Insan>
+
+

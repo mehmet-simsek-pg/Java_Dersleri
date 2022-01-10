@@ -1,7 +1,7 @@
 package gun36.modifiers.classes.package2;
 
 //import gun36.modifiers.package1.DefaultClass;
-import gun36.modifiers.package1.PublicClass;
+import gun36.modifiers.classes.package1.PublicClass;
 
 public class Main2 {
     public static void main(String[] args) {

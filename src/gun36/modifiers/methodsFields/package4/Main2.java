@@ -17,5 +17,15 @@ public class Main2 {
         p.publicMethod();
         //p.defaultMethod();  // farkli package"de oldugu icin default methoda ulasilamaz
         //p.privateMethod()   // sadece class icicnden ulasilabilir
+
+
+        // constructor kullanimi
+        PublicClass1 p1 = new PublicClass1();
+
+        // default constructorlara package disindan ulasilamaz
+        //PublicClass1 p2 = new PublicClass1(2);
+
+        // private constructorlara class disindan ulasilamaz
+        //PublicClass1 p3 = new PublicClass1(2, 3, 4);
     }
 }

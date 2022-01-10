@@ -1,5 +1,8 @@
 package gun34.odev1;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Insan {
     String adi;
     int ayakkabiNo;
@@ -9,9 +12,11 @@ public class Insan {
     public Insan(String adi, int ayakkabiNo) {
         this.adi = adi;
         this.ayakkabiNo = ayakkabiNo;
+
     }
 
     public void ayakkabiGiy(Ayakkabi pabuc){
+
         if (ayakkabi != null) {
             System.out.println("Zaten ayakkabim var");
         }else if(pabuc.numara != ayakkabiNo && pabuc.mevsim != Main.suAnkiMevsim ){

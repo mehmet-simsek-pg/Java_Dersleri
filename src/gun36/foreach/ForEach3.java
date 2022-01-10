@@ -1,4 +1,4 @@
-package gun36.ternary;
+package gun36.foreach;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,5 +19,6 @@ public class ForEach3 {
         System.out.println("------------------");
 
         map.forEach((k, v) -> System.out.println(k + ", " + v));
+
     }
 }

@@ -1,4 +1,4 @@
-package gun36.ternary;
+package gun36.foreach;
 
 import java.util.ArrayList;
 import java.util.Arrays;

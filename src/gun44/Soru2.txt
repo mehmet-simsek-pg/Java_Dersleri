@@ -1,0 +1,13 @@
+Bir okulun çalışanı ve öğrencilerinin kayıt altına alındığı bir program yapılmak isteniyor.
+1- Calisan ların isim, adres, Okul, maas ve UyeTipi (Enum: Ogrenci, Calisan)  bilgileri vardır.
+2- Öğrenci lerin isim, adres, Okul, ücret ve UyeTipi (Enum: Ogrenci, Calisan)  bilgileri vardır.
+3- Okul un ise ismi, maxOgrenciSayisi, Öğrencileri ve Calisanlari vardır.
+
+
+burada nesnelerin ortak özelliklerini tekrar tekrar yazmamak için, ortak özellikleri aynı olan
+özellikleri bir sınıf yapıp, diğerlerini bundan türetin.
+
+Ortak özellikleri farklı bir parent class'da toplayın.
+calışan ve öğrenciler oluşturarak Okul nesnesini doldurun.
+Okula öğrenci ve Calisan eklemek için gerekli metodları yazin.
+Öğrenci ve personel listesini de alabılelim.

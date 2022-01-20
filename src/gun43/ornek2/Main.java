@@ -23,37 +23,6 @@ public class Main {
          toString methodlari
          hangi class"in nasil bir degiskene ihtiyaci var, belirleyin
 
-
+        Yarın için ödev
      */
-}
-
-class Sekil{
-
-    public double alanHesapla(){
-        throw new RuntimeException("Belirsiz seklin alani hesaplanamaz");
-    }
-
-}
-
-class Dikdortgen extends Sekil{
-    double uzunluk, genislik;
-
-    public Dikdortgen(double uzunluk, double genislik) {
-        this.uzunluk = uzunluk;
-        this.genislik = genislik;
-    }
-
-    @Override
-    public double alanHesapla(){
-        return uzunluk*genislik;
-    }
-
-}
-
-class Kare extends Dikdortgen{
-
-    public Kare(double uzunluk) {
-        super(uzunluk, uzunluk);
-    }
-
 }

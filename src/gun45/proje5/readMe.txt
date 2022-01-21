@@ -3,7 +3,7 @@ Bu projede oluşturacağınız
     hesaplar arasında transfer yapmak
     hesabına göre ekle
 
-İlk önce Hesap > AddRelative > Kullanıcılar class'ı ile başlayın
+İlk önce Account > AddRelative > Users class'ı ile başlayın
 
 Diğer tüm bilgiler Class içinde yazılmıştır.
 

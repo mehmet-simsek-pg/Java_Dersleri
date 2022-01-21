@@ -1,5 +1,10 @@
 package gun45.proje5.TestClasses;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+
 public class yourTest {
 
     /*
@@ -26,4 +31,6 @@ public class yourTest {
         Tüm olası seçenekleri kontrol edin
 
      */
+
+
 }

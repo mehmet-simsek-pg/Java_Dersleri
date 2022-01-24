@@ -1,4 +1,8 @@
-package gun45.proje5.bankAccount;
+package gun45.proje5Solutions.bankAccount;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
 
 public class AddRelative {
 
@@ -7,8 +11,9 @@ public class AddRelative {
         String fullName , age
      */
     //--------------------------------------------------------------------------------------------------
+    String fullName;
+    String age;
 
-    String fullName , age;
 
 
     //--------------------------------------------------------------------------------------------------
@@ -24,24 +29,30 @@ public class AddRelative {
      */
 
     /*
-        parametresi String fullName ve age olan AddReative constructorunu oluşturun
+        String fullName ve age olan AddReative  parametresi olan constructorunu oluşturun
 
 
         instance variable fullName eşittir parameter fullName' e
 
-        Eğer age 18 e eşit veya büyük ise  instance variable age eşittir  parameter age (use relativeAgeChecker method) e.
+        Eğer age 18 e eşit veya büyük ise  instance variable age eşittir
+        parameter age (use relativeAgeChecker method) e.
          Eğer age 18 den küçük ise instance variable age eşittir "0"  .
 
      */
     //--------------------------------------------------------------------------------------------------
 
-    public AddRelative(String fullName, String age) {
+    public AddRelative(String fullName, String age){
+
         this.fullName = fullName;
-        if (Integer.parseInt(age)>=18)
+
+        if (relativeAgeChecker(age))
             this.age = age;
         else
             this.age = "0";
     }
+
+
+
 
 
     //--------------------------------------------------------------------------------------------------
@@ -70,14 +81,14 @@ public class AddRelative {
 
      */
     //--------------------------------------------------------------------------------------------------
-    public boolean relativeAgeChecker(String relativeAge){
-        if (Integer.parseInt(relativeAge)>=18)
-            return true;
-        else
-            return false;
+
+    boolean relativeAgeChecker(String relativeAge){
+
+        boolean moreThan18 = Period.between(LocalDate.parse(relativeAge, DateTimeFormatter.ofPattern("dd/MM/yyyy")), LocalDate.now()).getYears()>=18;
+
+        if (Users.getAge(relativeAge)>=18) return true;
+        return false;
+
     }
-
-
-
 
 }

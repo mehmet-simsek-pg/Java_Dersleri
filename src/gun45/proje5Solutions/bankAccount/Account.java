@@ -1,4 +1,4 @@
-package gun45.proje5.bankAccount;
+package gun45.proje5Solutions.bankAccount;
 
 public class Account {
 
@@ -6,22 +6,21 @@ public class Account {
         Create a static method name is deposit
         parameters are two int(int accountAmount , int amountToAdd)
         return type is int
+
         add amountToAdd to accountAmount
 
      */
 
-    /* ---  parametresi iki int olan  (int accountAmount , int amountToAdd)  ve return tipi int olan
+    /* ---  iki int olan  (int accountAmount , int amountToAdd) parametresi ve return tipi int olan
            deposit isminde bir static method oluşturun.
         -- accountAmount a  amountToAdd ekle
      */
 
     //------------------------------------------------------------------------------------------------
-    public int staticdeposit(int accountAmount , int amountToAdd) {
-        accountAmount+=amountToAdd;
+    public static int deposit(int accountAmount, int amountToAdd){
+        accountAmount += amountToAdd;
         return accountAmount;
     }
-
-
 
    //--------------------------------------------------------------------------------------------------
     /*
@@ -38,8 +37,8 @@ public class Account {
         -- accountAmount dan   withdrawAmount  cıkarın.
      */
     //--------------------------------------------------------------------------------------------------
-    public static int withDraw(int accountAmount , int withdrawAmount){
-        accountAmount += withdrawAmount;
+    public static int withDraw(int accountAmount, int withdrawAmount){
+        accountAmount -= withdrawAmount;
         return accountAmount;
     }
 
@@ -82,8 +81,6 @@ public class Account {
             - sendingUser amountAccount1  den transferAmount cıkart
             - receivingUser  amountAccount1 dan transferAmount ekle
             - ve, Transaction is completed successfully  return et
-
-
             Örnek:
         SendingUser amountAccount1  1000 dollar var
         receiving user amountAccount1  200 dollar var
@@ -93,18 +90,17 @@ public class Account {
         İşlemden sonra receivingUser amountAccount1  298 doları olmalı
      */
     //--------------------------------------------------------------------------------------------------
-
     public static String transferOtherUser(Users sendingUser, Users receivingUser, int transferAmount){
-        if (transferAmount > sendingUser.amountAccount1)
+        if (transferAmount > sendingUser.amountAccount1) {
             return "Sender is poor lol :)";
-        else{
-            transferAmount += 0.98;
+        } else {
+            transferAmount -= transferAmount*(0.02);
             sendingUser.amountAccount1 -= transferAmount;
             receivingUser.amountAccount1 += transferAmount;
             return "Transaction is completed successfully";
         }
-
     }
+
 
 
 
@@ -144,19 +140,16 @@ public class Account {
 
      */
     //--------------------------------------------------------------------------------------------------
-
-    public static String transferToOwnAccount(Users user, int transferAmount) {
-        if (transferAmount> user.amountAccount1)
+    public static String transferToOwnAccount(Users sendingUser, int transferAmount){
+        if (transferAmount > sendingUser.amountAccount1){
             return "You need more money dude";
-        else {
-            transferAmount *= 0.99;
-            user.amountAccount1 -= transferAmount;
-            user.amountAccount2 += transferAmount;
+        } else {
+            transferAmount -= transferAmount * (0.01);
+            sendingUser.amountAccount1 -= transferAmount;
+            sendingUser.amountAccount2 += transferAmount;
             return "Transaction is completed successfully";
         }
     }
-
-
 
 }
 

@@ -1,0 +1,51 @@
+IVehicle -> interface
+    String drive();
+    default void defaultMethod(){}
+    static void autoPilot(){}
+
+    IGas -> interface extends IVehicle
+        String changeOil();
+
+    IElectric -> interface extends IVehicle
+        String changeBattery();
+
+    IDiesel  -> initerface extends IVehicle
+        String changeDiesel();
+
+    Vehicle -> class
+        private Model model;
+        private int modelYili;
+        constructor();
+        getModel();
+        getModelYili();
+
+    Model   -> enum
+        TESLA101("Tesla Car", 0.0, "High technology model"),
+        TOYOTAPRIUS30("Toyota Prius", 3.0, "Hybrit auto"),
+        BUS403("Bus 403", 5.0, "Transporter Luxury Bus")
+         private String name;
+         private double engine;
+         private String explanation;
+
+
+    Utils   -> class
+        static void writeKnowledges(Vehicle vehicle);
+        instanceof
+
+
+    TeslaCar extends Vehicle implements Electric            -> class
+    ToyotaPrius extends Vehicle implements Electric, Gas    -> class
+    Bus extends Vehicle implements Diesel                   -> class
+
+
+    Main   -> main class
+        Vehicle teslaCar = new TeslaCar(Model.TESLA101, 2020);
+        Vehicle toyotaPrius = new ToyotaPrius(Model.TOYOTAPRIUS30, 2019);
+        Vehicle bus = new Bus(Model.BUS403, 2010);
+
+        Utils.writeKnowledges(teslaCar);
+        Utils.writeKnowledges(toyotaPrius);
+        Utils.writeKnowledges(bus);
+
+
+        ((TeslaCar) vehicle).getModel();

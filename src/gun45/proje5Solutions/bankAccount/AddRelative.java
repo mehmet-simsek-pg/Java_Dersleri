@@ -84,8 +84,6 @@ public class AddRelative {
 
     boolean relativeAgeChecker(String relativeAge){
 
-        boolean moreThan18 = Period.between(LocalDate.parse(relativeAge, DateTimeFormatter.ofPattern("dd/MM/yyyy")), LocalDate.now()).getYears()>=18;
-
         if (Users.getAge(relativeAge)>=18) return true;
         return false;
 

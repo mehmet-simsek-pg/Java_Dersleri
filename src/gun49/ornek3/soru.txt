@@ -1,0 +1,24 @@
+class ASinifi{
+
+    static int statikDegisken = 222;
+    int degisken = 111;
+
+    {   statikDegisken = statikDegisken++ - ++degisken; }
+        110             = 222 -  112
+}
+
+class BSinifi extends ASinifi{
+
+    {   degisken = statikDegisken-- + --degisken; }
+        221         = 110 + 111
+                      109
+}
+
+public class Main{
+    public static void main(String[] args) {
+        BSinifi b = new BSinifi();
+        System.out.println(b.degisken+" statik:"+BSinifi.statikDegisken);
+                           221 , 109
+
+    }
+}

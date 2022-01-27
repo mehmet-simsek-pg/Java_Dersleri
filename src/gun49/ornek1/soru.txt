@@ -19,7 +19,7 @@ Insan
         arac mi kullaniyor
 
 
-IsMakinesi
+Arac
     String isim
     Insan sofor
     boolean calisiyor

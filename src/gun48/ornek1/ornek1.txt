@@ -1,0 +1,16 @@
+Insan
+    ismi
+    arkadaslar<Insan>
+
+
+    sohbetEt();
+        arkadasi ise ve arkadasi sohbet etmiyor ise sohbet edebilir.
+
+    arkadasEkle();
+
+
+    1.  gerekebilecek parametre ve fieldlari ekleyin
+    2.  Birine arkadas atanirsa, atanan kisinin de arkadasi diger kisi olacak
+    3.  5 Insan olusturup, mainde arkadas atayin ve bunlari sohbet ettirin.
+    4.  alternatifleri deneyin.
+

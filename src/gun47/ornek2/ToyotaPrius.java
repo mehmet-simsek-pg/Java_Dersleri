@@ -1,6 +1,6 @@
 package gun47.ornek2;
 
-class ToyotaPrius extends Vehicle implements IElectric, IVehicle.IGas {
+class ToyotaPrius extends Vehicle implements IElectric, IVehicle, IGas {
 
     public ToyotaPrius(Model model, int modelYili) {
         super(model, modelYili);

@@ -1,0 +1,30 @@
+Insan
+    String isim
+    boolean ehliyet
+    Ismakinesi arac
+    String durum;
+
+
+    aracabin(IsMakinesi arac);
+        arac bos ise binilebilir
+    aracdanIn();
+        arac duduyor use inilebilir
+    sur();
+        ehliyeti olan surebilir
+    dur();
+
+    neYapiyorsun();
+        beklemede mi,
+        aracda mi
+        arac mi kullaniyor
+
+
+IsMakinesi
+    String isim
+    Insan sofor
+    boolean calisiyor
+
+    soforu();
+        soforünün ismi
+
+

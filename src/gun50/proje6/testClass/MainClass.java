@@ -5,7 +5,7 @@ import gun50.proje6.lessons.LessonClass;
 import gun50.proje6.lessons.Music;
 import gun50.proje6.student.StudentClass;
 
-public class MainClas {
+public class MainClass {
 
     public static void main(String[] args) {
 /* Test icin bu satiri silin --------------------------------------------

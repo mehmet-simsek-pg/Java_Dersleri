@@ -25,9 +25,6 @@ public abstract class LessonClass {
 
      */
     //-------------------------------------------------------------------------------------------------------
-    private static int totalCreditCount;
-    private LinkedHashMap<String, Integer> classNameAndScore = new LinkedHashMap<>();
-    private StudentClass studentClass;
 
 
     /*
@@ -61,10 +58,7 @@ public abstract class LessonClass {
      */
 //-------------------------------------------------------------------------------------------------------
 
-    public LessonClass(StudentClass studentClass){
-        this.studentClass = studentClass;
-        setCreditCount();
-    }
+
    /*
 
     Create a method name setCreditCount
@@ -103,22 +97,6 @@ public abstract class LessonClass {
      */
 //-------------------------------------------------------------------------------------------------------
 
-    void setCreditCount(){
-        ArrayList<String> lessonsName = new ArrayList<>();
-        Scanner sc = new Scanner(System.in);
-        do {
-            System.out.println("Which class you would like to take your options are here : " +
-                    "Math , Science , Biology , Chemistry , Music");
-            String lesson = sc.nextLine();
-            System.out.println(totalCreditCount);
-            if (lessonsName.contains(lesson))
-                System.out.println("You already took this class please choose other class");
-            else{
-                lessonsName.add(lesson);
-                totalCreditCount += checkCredit(lesson);
-            }
-        } while (totalCreditCount <= 7);
-    }
 
 
 
@@ -174,24 +152,6 @@ public abstract class LessonClass {
      value RandomNum olan sonraki methodundan almalıdır
      */
 //-------------------------------------------------------------------------------------------------------
-    public int checkCredit(String lessonName){
-        int credit = 0;
-        if (lessonName.equalsIgnoreCase("Math"))
-            credit = 3;
-        else if (lessonName.equalsIgnoreCase("Science"))
-            credit = 4;
-        else if (lessonName.equalsIgnoreCase("Biology"))
-            credit = 2;
-        else if (lessonName.equalsIgnoreCase("Chemistry"))
-            credit = 2;
-        else if (lessonName.equalsIgnoreCase("Music"))
-            credit = 3;
-        else throw new RuntimeException("You class name is not a valid class name.");
-
-        classNameAndScore.put(lessonName, RandomNum());
-
-        return credit;
-    }
 
 
 
@@ -212,8 +172,7 @@ public abstract class LessonClass {
     0 ile 100 arasında bir int  oluştur
      */
 //-------------------------------------------------------------------------------------------------------
-    public int RandomNum(){
-        return (int)(Math.random()*101); }
+
 
     /*
     Create a get method for the ClassNameAndScore
@@ -224,7 +183,5 @@ public abstract class LessonClass {
    ClassNameAndScore için get methodu oluşturun
      */
 
-    public LinkedHashMap<String, Integer> getClassNameAndScore() {
-        return classNameAndScore;
-    }
+
 }

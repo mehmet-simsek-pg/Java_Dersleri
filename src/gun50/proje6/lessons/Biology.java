@@ -4,7 +4,7 @@ import gun50.proje6.student.StudentClass;
 
 import java.util.ArrayList;
 
-public class Biology {
+public class Biology{
  /*
     This class child of the LessonClass
 

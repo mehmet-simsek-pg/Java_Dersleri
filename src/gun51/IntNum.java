@@ -1,4 +1,4 @@
-package gun51.localdatetime;
+package gun51;
 
 public class IntNum {
     public static void main(String[] args) {

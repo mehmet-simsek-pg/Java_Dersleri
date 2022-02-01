@@ -1,4 +1,4 @@
-package gun51.localdatetime;
+package gun51;
 
 import java.time.Duration;
 import java.time.LocalTime;

@@ -1,0 +1,13 @@
+modifiers
+
+        access modifiers    (ulasilabilirlik)
+            privat              ->  sadece class icinden ulasilir
+            (default, friendly)   ->  ayni paket icinden ulasilir
+            protected           ->  ayni paket + farkli paketteki child classlar
+            public              ->  herkes ulasabilir
+
+        nonaccess modifiers (ulasimla ilgili degil, fonksiyonellik ozelligi verir)
+            final,
+            static,
+
+

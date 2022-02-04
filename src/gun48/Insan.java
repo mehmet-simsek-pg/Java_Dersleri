@@ -1,4 +1,4 @@
-package gun48.ornek1;
+package gun48;
 
 import java.util.ArrayList;
 

@@ -1,0 +1,25 @@
+Banka -> abstractClass
+    String isim;
+    BankaTuru turu;
+    double kasaToplami
+
+    abstract faizEkle();
+    constructor;
+
+BankaTuru -> enum
+    KATILIM
+    NORMAL
+    TICARI
+
+
+finans  -> Interface
+    paraYatir(double miktar)
+    paraCek(double miktar)
+
+Banka1  extend Banka implements finans
+    String adres;
+    double faizOrani:
+
+Banka2  extend Banka implements finans
+    String subeSayisi;
+    double faizOrani:
